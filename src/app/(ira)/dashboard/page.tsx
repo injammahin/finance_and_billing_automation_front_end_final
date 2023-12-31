@@ -19,26 +19,24 @@ const DashboardPage: React.FC = () => {
       <div className="grid grid-cols-2 gap-4">
         <button
           className={`${
-            selectedItem === "bills" ? "bg-blue-600" : "bg-blue-500"
-          } text-white p-4 rounded-md text-center transition duration-300 hover:bg-blue-600`}
+            selectedItem === "Bank-info" ? "bg-indigo-600" : "bg-indigo-500"
+          } text-white p-4 rounded-md text-center transition duration-300 hover:bg-indigo-600`}
           onClick={() => navigateTo("../dashboard/bill")}
         >
           Bill
         </button>
         <button
           className={`${
-            selectedItem === "payment-schedule"
-              ? "bg-green-600"
-              : "bg-green-500"
-          } text-white p-4 rounded-md text-center transition duration-300 hover:bg-green-600`}
+            selectedItem === "Bank-info" ? "bg-indigo-600" : "bg-indigo-500"
+          } text-white p-4 rounded-md text-center transition duration-300 hover:bg-indigo-600`}
           onClick={() => navigateTo("../dashboard/paymentschedule")}
         >
           Payment Schedule
         </button>
         <button
           className={`${
-            selectedItem === "vendors" ? "bg-yellow-600" : "bg-yellow-500"
-          } text-white p-4 rounded-md text-center transition duration-300 hover:bg-yellow-600`}
+            selectedItem === "Bank-info" ? "bg-indigo-600" : "bg-indigo-500"
+          } text-white p-4 rounded-md text-center transition duration-300 hover:bg-indigo-600`}
           onClick={() => navigateTo("../dashboard/vendor")}
         >
           Vendor
