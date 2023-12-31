@@ -123,6 +123,38 @@ const DashboardPage: React.FC = () => {
         >
           Payment Methoad
         </button>
+        <button
+          className={`${
+            selectedItem === "inventory" ? "bg-indigo-600" : "bg-indigo-500"
+          } text-white p-4 rounded-md text-center transition duration-300 hover:bg-indigo-600`}
+          onClick={() => navigateTo("../accounting-dashboard/analytics")}
+        >
+          analytics
+        </button>
+        <button
+          className={`${
+            selectedItem === "inventory" ? "bg-indigo-600" : "bg-indigo-500"
+          } text-white p-4 rounded-md text-center transition duration-300 hover:bg-indigo-600`}
+          onClick={() => navigateTo("../accounting-dashboard/fixed-assets")}
+        >
+          show assets
+        </button>
+        <button
+          className={`${
+            selectedItem === "inventory" ? "bg-indigo-600" : "bg-indigo-500"
+          } text-white p-4 rounded-md text-center transition duration-300 hover:bg-indigo-600`}
+          onClick={() => navigateTo("../quotes")}
+        >
+          Quotes
+        </button>
+        <button
+          className={`${
+            selectedItem === "inventory" ? "bg-indigo-600" : "bg-indigo-500"
+          } text-white p-4 rounded-md text-center transition duration-300 hover:bg-indigo-600`}
+          onClick={() => navigateTo("../sales-tax")}
+        >
+          sales and tax
+        </button>
       </div>
     </div>
   );
